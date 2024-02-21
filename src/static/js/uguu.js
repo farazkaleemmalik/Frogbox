@@ -19,6 +19,12 @@
 
 /*jshint esversion: 6 */
 
+// Dynamically link frog/grill in CSS to prevent browser and ISP cacheing
+const grillPromise = fetch("/grill.php")
+grillPromise.then(res => {
+    document.getElementsByTagName("body")[0].style["background-image"] = "url('" + res.url + "'), url('img/bg.png')";
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     /**
      * Sets up the elements inside file upload rows.
