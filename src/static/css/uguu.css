@@ -51,6 +51,9 @@ body {
 .container {
   margin: 0 auto;
   max-width: 700px;
+  background-color: #949e79;
+  padding: inherit;
+  border-radius: 7px;
 }
 
 /**
@@ -66,14 +69,14 @@ input[type=image], img {
 }
 /* links */
 a {
-  color: #0078B4;
+  color: #468847;
   text-decoration: none;
   transition: color 0.25s;
 }
 a:hover,
 a:focus,
 a:active {
-  color: #005580;
+  color: #2c552c;
 }
 a:focus {
   outline: thin dotted #333;
