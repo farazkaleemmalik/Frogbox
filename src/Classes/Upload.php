@@ -198,7 +198,7 @@
                'hash'     => $this->FILE_INFO['XXH'],
                'name'     => $this->FILE_INFO['NAME'],
                'filename' => $this->FILE_INFO['FILENAME'],
-               'url'      => 'https://' . $this->Connector->CONFIG['FILE_DOMAIN'] . '/' . $this->FILE_INFO['FILENAME'],
+               'url'      => 'http' . (($this->Connector->CONFIG['HTTPS']) ? ('s') : ('')) . '://' . $this->Connector->CONFIG['FILE_DOMAIN'] . '/' . $this->FILE_INFO['FILENAME'],
                'size'     => $this->FILE_INFO['SIZE'],
                'dupe'     => $this->FILE_INFO['DUPE'],
             ];
