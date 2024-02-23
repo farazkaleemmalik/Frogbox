@@ -145,9 +145,9 @@ a:focus {
   color: #AA4342;
 }
 .alert-info {
-  background-color: #D9EDF7;
+  background-color: #d9f7e1;
   border-color: #BCE8F1;
-  color: #167196;
+  color: #2c552c;
 }
 
 /**
@@ -200,7 +200,7 @@ a.donate-btn:hover {
  */
 nav > ul,
 nav a {
-  color: #33799B;
+  /*color: #33799B;*/
   list-style: none;
   margin: 0;
   padding: 0;
